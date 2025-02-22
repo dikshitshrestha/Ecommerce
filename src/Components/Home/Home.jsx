@@ -1,9 +1,12 @@
 import React from "react";
+import Hero from "./Hero";
+import HomeShop from "./HomeShop";
 
 export default function Home() {
   return (
     <div>
-      <h1>welcome to home</h1>
+      <Hero />
+      <HomeShop />
     </div>
   );
 }

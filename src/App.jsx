@@ -11,6 +11,10 @@ import Search from "./Components/Search";
 import Cart from "./Components/Cart";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import HomeShop from "./Components/Home/HomeShop";
+import Men from "./Components/Home/Men";
+import Women from "./Components/Home/Women";
+import Kid from "./Components/Home/Kid";
 
 export default function () {
   return (
@@ -28,7 +32,6 @@ export default function () {
           <Route path="/search" element={<Search />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );
