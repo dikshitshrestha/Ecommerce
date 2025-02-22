@@ -31,7 +31,11 @@ export default function () {
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/search" element={<Search />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/home/shop/men" element={<Home />} />
+          <Route path="/home/shop/women" element={<Women />} />
+          <Route path="/home/shop/kid" element={<Kid />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

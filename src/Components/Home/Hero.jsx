@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="absolute top-[90%] left-1">
           <button
             onClick={left}
-            className={`bg-black text-white py-4 px-4 rounded-full ease-in-out duration-300 hover:bg-zinc-400 hover:text-black ${
+            className={`bg-black text-white py-4 px-4 rounded-full ease-in-out duration-500 hover:bg-zinc-400 hover:text-black ${
               isHovered === 1 ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -51,7 +51,7 @@ export default function Hero() {
         <div className="absolute top-[90%] right-2">
           <button
             onClick={right}
-            className={`bg-black text-white py-4 px-4 rounded-full ease-in-out duration-300 hover:bg-zinc-400 hover:text-black ${
+            className={`bg-black text-white py-4 px-4 rounded-full ease-in-out duration-500 hover:bg-zinc-400 hover:text-black ${
               isHovered === 1 ? "opacity-100" : "opacity-0"
             }`}
           >
