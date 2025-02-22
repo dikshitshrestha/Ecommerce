@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaStar } from "react-icons/fa6";
 import tshirt from "../../assets/tshirt.jpg";
 import slogan from "../../assets/printed.jpg";
@@ -11,8 +11,10 @@ import jumper from "../../assets/jumper.jpg";
 import buttondown from "../../assets/buttondown.jpg";
 import coat from "../../assets/coat.jpg";
 import { MdArrowOutward } from "react-icons/md";
+import { CiStar } from "react-icons/ci";
 
 export default function HomeProducts() {
+  const [isHovered, setIsHovered] = useState(null);
   const Stars = [];
   const Products = [
     { name: "Viscose T-shirt", image: tshirt, price: "Rs 750" },
@@ -35,13 +37,34 @@ export default function HomeProducts() {
       <h1 className="text-2xl font-semibold text-center">NEW ARRIVALS</h1>
       <div className="grid grid-cols-5 grid-rows-2 gap-8 px-6 py-14">
         {Products.map((item, index) => (
-          <div>
-            <div className="h-80 w-full overflow-hidden rounded-md">
+          <div key={index}>
+            <div
+              className="h-80 w-full overflow-hidden rounded-md relative"
+              onMouseEnter={() => setIsHovered(index)}
+              onMouseLeave={() => setIsHovered(null)}
+            >
               <img
                 src={item.image}
                 alt={item.name}
-                className="h-full w-full object-cover bg-center"
+                className="h-full w-full object-cover object-center"
               />
+              <div
+                className={`absolute inset-0 bg-slate-200 bg-opacity-30 transition-opacity duration-200 ${
+                  isHovered === index ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                <div className="h-1/2 flex justify-end p-4">
+                  <div className="text-xl h-9 w-9 bg-white flex items-center justify-center rounded-full hover:text-white hover:bg-black ease-in-out duration-300 cursor-pointer">
+                    <CiStar />
+                  </div>
+                </div>
+                <div className="flex items-end h-1/2 py-2 justify-center">
+                  <button className="text-[10px] font-semibold flex items-center gap-1 py-3.5 px-12 bg-white rounded-md hover:bg-black hover:text-white ease-in-out duration-300">
+                    ADD TO CART
+                    <MdArrowOutward />
+                  </button>
+                </div>
+              </div>
             </div>
             <a
               href="/shop"
