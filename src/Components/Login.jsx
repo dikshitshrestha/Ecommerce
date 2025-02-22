@@ -1,6 +1,5 @@
 import React from "react";
 import bg from "../assets/background.jpg";
-import Pageend from "../Components/Pageend";
 
 export default function Login() {
   return (
@@ -105,7 +104,6 @@ export default function Login() {
           </form>
         </div>
       </div>
-      <Pageend />
     </div>
   );
 }

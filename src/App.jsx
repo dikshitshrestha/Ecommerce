@@ -1,103 +1,35 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Components/Home";
-import Blog from "./Components/Blog";
-import Cart from "./Components/Cart";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home/Home";
+import Blog from "./Components/Blog/Blog";
+import Pages from "./Components/Pages/Pages";
+import Product from "./Components/Product/Product";
+import Shop from "./Components/Shop/Shop";
 import Login from "./Components/Login";
-import Pages from "./Components/Pages";
-import Product from "./Components/Product";
-import Search from "./Components/Search";
-import Shop from "./Components/Shop";
 import Wishlist from "./Components/Wishlist";
+import Search from "./Components/Search";
+import Cart from "./Components/Cart";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
-export default function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: (
-        <>
-          <Navbar />
-          <Home />
-        </>
-      ),
-    },
-    {
-      path: "/blog",
-      element: (
-        <>
-          <Navbar />
-          <Blog />
-        </>
-      ),
-    },
-    {
-      path: "/cart",
-      element: (
-        <>
-          <Navbar />
-          <Cart />
-        </>
-      ),
-    },
-    {
-      path: "/login",
-      element: (
-        <>
-          <Navbar />
-          <Login />
-        </>
-      ),
-    },
-    {
-      path: "/pages",
-      element: (
-        <>
-          <Navbar />
-          <Pages />
-        </>
-      ),
-    },
-    {
-      path: "/product",
-      element: (
-        <>
-          <Navbar />
-          <Product />
-        </>
-      ),
-    },
-    {
-      path: "/search",
-      element: (
-        <>
-          <Navbar />
-          <Search />
-        </>
-      ),
-    },
-    {
-      path: "/shop",
-      element: (
-        <>
-          <Navbar />
-          <Shop />
-        </>
-      ),
-    },
-    {
-      path: "/wishlist",
-      element: (
-        <>
-          <Navbar />
-          <Wishlist />
-        </>
-      ),
-    },
-  ]);
+export default function () {
   return (
     <div>
-      <RouterProvider router={router} />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/pages" element={<Pages />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
