@@ -1,7 +1,12 @@
 import React from "react";
 import bg from "../../assets/background.jpg";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 export default function Contact() {
+  const icons = [FaFacebook, FaInstagram, FaTwitter, FaYoutube];
   return (
     <div>
       <div className="h-[400px] relative flex flex-col items-center">
@@ -17,7 +22,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="flex items-center">
         <div className="py-28 px-28">
           <div className="flex flex-col gap-3 pb-8">
             <h1 className="text-2xl font-semibold text-zinc-800">
@@ -60,6 +65,46 @@ export default function Contact() {
                 Submit Now
               </button>
             </div>
+          </div>
+        </div>
+        <div className="pr-20 flex flex-col gap-7">
+          <h1 className="font-semibold">
+            Address:
+            <span className="text-zinc-700 font-normal ml-1">
+              Teku, Kathmandu, Nepal &
+            </span>
+            <br />
+            <span className="text-zinc-700 font-normal">
+              Dhobighat, Lalitpur, Nepal
+            </span>
+          </h1>
+          <div>
+            <h1 className="font-semibold">
+              Email:
+              <span className="text-zinc-700 font-normal ml-1">
+                support@domain.com
+              </span>
+            </h1>
+            <h1 className="font-semibold">
+              Call Us:
+              <span className="text-zinc-700 font-normal ml-1">9813344279</span>
+            </h1>
+          </div>
+          <h1 className="font-semibold">
+            Operating time:
+            <span className="text-zinc-700 font-normal ml-1">
+              Our store has re-opened for shopping,
+            </span>
+            <span className="text-zinc-700 font-normal ml-1">
+              exchanges every day 11am to 7pm
+            </span>
+          </h1>
+          <div className="flex gap-2">
+            {icons.map((Icon, index) => (
+              <div className="bg-black h-8 w-8 rounded-md flex items-center justify-center hover:bg-orange-600 cursor-pointer duration-300 ease-in-out">
+                <Icon key={index} className="text-white" />
+              </div>
+            ))}
           </div>
         </div>
       </div>
