@@ -1,9 +1,10 @@
 import React from "react";
+import ProductHeader from "./ProductHeader";
 
 export default function Product() {
   return (
     <div>
-      <h1>you are in product</h1>
+      <ProductHeader />
     </div>
   );
 }

@@ -1,9 +1,12 @@
 import React from "react";
+import ShopHeader from "./ShopHeader";
+import ShopProducts from "./ShopProducts";
 
 export default function Shop() {
   return (
     <div>
-      <h1>you are in shop</h1>
+      <ShopHeader />
+      <ShopProducts />
     </div>
   );
 }
