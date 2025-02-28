@@ -37,17 +37,6 @@ export default function Navbar() {
             SHOP <MdKeyboardArrowDown />
           </NavLink>
           <NavLink
-            to="/product"
-            className={({ isActive }) =>
-              `flex items-center hover:text-black hover:font-semibold hover:ease-in-out hover:duration-300 ${
-                isActive ? "text-black font-semibold" : ""
-              }`
-            }
-          >
-            PRODUCT
-            <MdKeyboardArrowDown />
-          </NavLink>
-          <NavLink
             to="/pages"
             className={({ isActive }) =>
               `flex items-center hover:text-black hover:font-semibold hover:ease-in-out hover:duration-300 ${
@@ -68,22 +57,22 @@ export default function Navbar() {
             BLOG <MdKeyboardArrowDown />
           </NavLink>
         </div>
-        <div className="flex items-center gap-5">
-          <NavLink to="/search">
+        <div className="flex items-center gap-5 ml-20">
+          <a href="#">
             <div className="h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer">
               <LiaSearchSolid />
             </div>
-          </NavLink>
-          <NavLink to="/wishlist">
+          </a>
+          <a href="#">
             <div className="h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer">
               <CiStar />
             </div>
-          </NavLink>
-          <NavLink to="/cart">
+          </a>
+          <a href="#">
             <div className="h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer">
               <BsCart2 />
             </div>
-          </NavLink>
+          </a>
           <div className="relative flex items-center text-xs gap-5 font-semibold text-zinc-700 w-48 h-12 bg-zinc-200 rounded-3xl py-2 px-1">
             <div
               className={`absolute top-1 bottom-1 w-[5.8rem] text-black bg-white rounded-full transition-all duration-300`}

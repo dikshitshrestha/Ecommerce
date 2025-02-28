@@ -18,7 +18,7 @@ export default function Contact() {
               Home
             </a>
             <p>-</p>
-            <p>Contact Us</p>
+            <p>Contact Us Page</p>
           </div>
         </div>
       </div>

@@ -85,11 +85,13 @@ export default function ShopHeader() {
                   className="h-72 w-72 flex flex-col justify-center items-center"
                   key={index}
                 >
-                  <img
-                    src={item.img}
-                    alt={item.name}
-                    className="h-3/4 w-3/4 rounded-full object-cover"
-                  />
+                  <div className="h-3/4 w-3/4 overflow-hidden rounded-full ">
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      className="h-full w-full object-cover hover:scale-125 duration-500"
+                    />
+                  </div>
                   <div className="mt-4 text-center">
                     <h1 className="font-semibold text-xl">{item.name}</h1>
                     <p className="font-light text-zinc-600">
