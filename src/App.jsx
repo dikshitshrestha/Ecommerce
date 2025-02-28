@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Pages from "./Components/Pages/Pages";
 import Shop from "./Components/Shop/Shop";
@@ -15,7 +15,7 @@ import Blog from "./Components/Blog/Blog";
 export default function () {
   return (
     <div>
-      <Router>
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,7 +28,7 @@ export default function () {
           <Route path="/home/shop/kid" element={<Kid />} />
         </Routes>
         <Footer />
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
