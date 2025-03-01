@@ -44,7 +44,7 @@ export default function Navbar() {
               }`
             }
           >
-            PAGES
+            CONTACT
           </NavLink>
           <NavLink
             to="/blog"
