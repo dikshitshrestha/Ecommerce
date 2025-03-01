@@ -85,7 +85,7 @@ export default function HomeProducts() {
           </div>
         ))}
       </div>
-      <a href="/shop" className="flex justify-center">
+      <a href="#" className="flex justify-center">
         <div className="text-xs font-semibold flex items-center gap-1 px-11 py-4 rounded-full bg-gray-100 hover:bg-black hover:text-white duration-300 ease-in-out">
           SHOP ALL PRODUCTS <MdArrowOutward />
         </div>
