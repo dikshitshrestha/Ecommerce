@@ -5,9 +5,14 @@ import { CiStar } from "react-icons/ci";
 import { BsCart2 } from "react-icons/bs";
 import logo from "../assets/Ecommerce_Logo.png";
 import { NavLink } from "react-router-dom";
+import Search from "./Search";
+import Cart from "./Cart";
+import Wishlist from "./Wishlist";
 
 export default function Navbar() {
   const [activeButton, setActiveButton] = useState(1);
+  const [popUp, setPopUp] = useState(null);
+
   return (
     <div>
       <div className="flex items-center py-8 px-8 gap-36">
@@ -58,21 +63,30 @@ export default function Navbar() {
           </NavLink>
         </div>
         <div className="flex items-center gap-5 ml-20">
-          <a href="#">
-            <div className="h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer">
-              <LiaSearchSolid />
-            </div>
-          </a>
-          <a href="#">
-            <div className="h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer">
-              <CiStar />
-            </div>
-          </a>
-          <a href="#">
-            <div className="h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer">
-              <BsCart2 />
-            </div>
-          </a>
+          <button
+            onClick={() => setPopUp(popUp === "search" ? null : "search")}
+            className={`h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer ${
+              popUp === "search" ? "bg-black text-white" : ""
+            }`}
+          >
+            <LiaSearchSolid />
+          </button>
+          <button
+            onClick={() => setPopUp(popUp === "wishlist" ? null : "wishlist")}
+            className={`h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer ${
+              popUp === "wishlist" ? "bg-black text-white" : ""
+            }`}
+          >
+            <CiStar />
+          </button>
+          <button
+            onClick={() => setPopUp(popUp === "cart" ? null : "cart")}
+            className={`h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer ${
+              popUp === "cart" ? "bg-black text-white" : ""
+            }`}
+          >
+            <BsCart2 />
+          </button>
           <div className="relative flex items-center text-xs gap-5 font-semibold text-zinc-700 w-48 h-12 bg-zinc-200 rounded-3xl py-2 px-1">
             <div
               className={`absolute top-1 bottom-1 w-[5.8rem] text-black bg-white rounded-full transition-all duration-300`}
@@ -99,6 +113,9 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      {popUp === "search" && <Search />}
+      {popUp === "cart" && <Cart />}
+      {popUp === "wishlist" && <Wishlist />}
     </div>
   );
 }
