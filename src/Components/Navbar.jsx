@@ -24,7 +24,7 @@ export default function Navbar() {
               }`
             }
           >
-            HOME <MdKeyboardArrowDown />
+            HOME
           </NavLink>
           <NavLink
             to="/shop"
@@ -34,7 +34,7 @@ export default function Navbar() {
               }`
             }
           >
-            SHOP <MdKeyboardArrowDown />
+            SHOP
           </NavLink>
           <NavLink
             to="/pages"
@@ -44,7 +44,7 @@ export default function Navbar() {
               }`
             }
           >
-            PAGES <MdKeyboardArrowDown />
+            PAGES
           </NavLink>
           <NavLink
             to="/blog"
@@ -54,7 +54,7 @@ export default function Navbar() {
               }`
             }
           >
-            BLOG <MdKeyboardArrowDown />
+            BLOG
           </NavLink>
         </div>
         <div className="flex items-center gap-5 ml-20">
