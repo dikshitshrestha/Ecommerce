@@ -7,11 +7,13 @@ export default function AboutFooter() {
     <div>
       <div className="text-center flex flex-col gap-5">
         <h1 className="text-zinc-600">Our Locations</h1>
-        <h1 className="text-4xl font-medium text-zinc-800">Stores System</h1>
+        <h1 className="lg:text-4xl text-2xl font-medium text-zinc-800">
+          Stores System
+        </h1>
       </div>
-      <div className="grid grid-cols-2 gap-6 px-6 py-10">
+      <div className="grid lg:grid-cols-2 gap-6 px-6 py-10">
         <div>
-          <div className="h-[450px] rounded-md  object-cover overflow-hidden">
+          <div className="lg:h-[450px] rounded-md  object-cover overflow-hidden">
             <img
               src={ktm}
               alt="ktm"
@@ -26,7 +28,7 @@ export default function AboutFooter() {
           </div>
         </div>
         <div>
-          <div className="h-[450px] rounded-md  object-cover overflow-hidden">
+          <div className="lg:h-[450px] rounded-md  object-cover overflow-hidden">
             <img
               src={llt}
               alt="lalitpur"

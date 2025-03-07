@@ -8,7 +8,7 @@ import AboutFooter from "./BlogFooter";
 export default function Blog() {
   return (
     <div>
-      <div className="h-[400px] relative flex flex-col items-center">
+      <div className="lg:h-[400px] h-[200px] relative flex flex-col items-center">
         <img src={bg} alt={bg} className="h-full w-full object-cover" />
         <div className="absolute top-[40%] text-white">
           <h1 className="text-center text-3xl font-semibold">Blog</h1>
@@ -21,24 +21,26 @@ export default function Blog() {
           </div>
         </div>
       </div>
-      <div className="py-20">
+      <div className="lg:py-20 py-10">
         <div className="text-center">
           <h1 className="text-zinc-600">Learn more about our Design!</h1>
-          <div className="text-4xl font-bold text-zinc-800 flex flex-col gap-4 py-5">
-            <h1>Our Mission? We Bring Harmony And Practicality Into</h1>
-            <h1>Great Designs For Everyone</h1>
+          <div className="lg:text-4xl text-2xl font-bold text-zinc-800 flex flex-col gap-4 py-5">
+            <h1>
+              Our Mission? We Bring Harmony And Practicality Into Great Designs
+              For Everyone
+            </h1>
           </div>
         </div>
-        <div className="py-16 px-6">
-          <div className="flex h-[500px] gap-5">
-            <div className="overflow-hidden h-full w-2/3 rounded-md">
+        <div className="lg:py-16 py-2 px-6">
+          <div className="flex lg:flex-row flex-col lg:h-[500px] gap-5">
+            <div className="overflow-hidden lg:h-full h-48 lg:w-2/3 rounded-md">
               <img
                 src={photo1}
                 alt="photo1"
                 className="object-cover object-left hover:scale-105 duration-500 h-full w-full"
               />
             </div>
-            <div className="overflow-hidden h-full w-1/3 rounded-md">
+            <div className="overflow-hidden lg:h-full h-48 lg:w-1/3 rounded-md">
               <img
                 src={photo2}
                 alt="photo2"

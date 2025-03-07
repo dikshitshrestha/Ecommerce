@@ -9,7 +9,7 @@ export default function Contact() {
   const icons = [FaFacebook, FaInstagram, FaTwitter, FaYoutube];
   return (
     <div>
-      <div className="h-[400px] relative flex flex-col items-center">
+      <div className="lg:h-[400px] h-[200px] relative flex flex-col items-center">
         <img src={bg} alt={bg} className="h-full w-full object-cover" />
         <div className="absolute top-[40%] text-white">
           <h1 className="text-center text-3xl font-semibold">Contact Us</h1>
@@ -22,10 +22,10 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="flex items-center">
-        <div className="py-28 px-28">
+      <div className="flex lg:flex-row flex-col py-8 items-center">
+        <div className="lg:py-28 px-4 lg:px-28">
           <div className="flex flex-col gap-3 pb-8">
-            <h1 className="text-2xl font-semibold text-zinc-800">
+            <h1 className="lg:text-2xl font-semibold text-zinc-800">
               GET IN TOUCH
             </h1>
             <p className="text-xs text-zinc-600">
@@ -34,40 +34,40 @@ export default function Contact() {
             </p>
           </div>
           <div className="flex flex-col gap-3">
-            <div className="flex gap-3">
+            <div className="flex lg:flex-row flex-col gap-3">
               <input
                 type="text"
                 placeholder="YOUR NAME"
-                className="py-4 border-solid text-zinc-600 border-[1px] text-xs border-zinc-300 px-6 w-96 rounded-md hover:border-zinc-800 ease-in-out duration-300 outline-none"
+                className="py-4 border-solid text-zinc-600 border-[1px] text-xs border-zinc-300 px-6 lg:w-96 w-72 rounded-md hover:border-zinc-800 ease-in-out duration-300 outline-none"
               />
               <input
                 type="text"
                 placeholder="YOUR EMAIL"
-                className="py-4 border-solid border-[1px] text-zinc-600 text-xs border-zinc-300 px-6 w-96 rounded-md hover:border-zinc-800 ease-in-out duration-300 outline-none"
+                className="py-4 border-solid border-[1px] text-zinc-600 text-xs border-zinc-300 px-6 lg:w-96 w-72 rounded-md hover:border-zinc-800 ease-in-out duration-300 outline-none"
               />
             </div>
             <div>
               <input
                 type="text"
-                placeholder="YOUR EMAIL"
-                className="py-4 border-solid border-[1px] text-zinc-600 text-xs border-zinc-300 px-6 w-[780px] rounded-md hover:border-zinc-800 ease-in-out duration-300 outline-none"
+                placeholder="YOUR ADDRESS"
+                className="py-4 border-solid border-[1px] text-zinc-600 text-xs border-zinc-300 px-6 lg:w-[780px] w-72 rounded-md hover:border-zinc-800 ease-in-out duration-300 outline-none"
               />
             </div>
             <div>
               <textarea
                 type="text"
-                placeholder="YOUR EMAIL"
-                className="py-4 h-52 border-solid border-[1px] text-zinc-600 text-xs border-zinc-300 px-6 w-[780px] rounded-md hover:border-zinc-800 ease-in-out duration-300 outline-none"
+                placeholder="YOUR MESSAGE"
+                className="py-4 h-52 border-solid border-[1px] text-zinc-600 text-xs border-zinc-300 px-6 lg:w-[780px] w-72 rounded-md hover:border-zinc-800 ease-in-out duration-300 outline-none"
               />
             </div>
-            <div className="mt-4">
+            <div className="py-4">
               <button className="bg-black text-white hover:bg-orange-700 text-xs font-semibold py-4 px-14 rounded-md ease-in-out duration-300">
                 Submit Now
               </button>
             </div>
           </div>
         </div>
-        <div className="pr-20 flex flex-col gap-7">
+        <div className="lg:pr-20 flex flex-col gap-4 py-6 pl-4 lg:gap-7">
           <h1 className="font-semibold">
             Address:
             <span className="text-zinc-700 font-normal ml-1">

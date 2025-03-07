@@ -5,7 +5,7 @@ export default function Login() {
   return (
     <div>
       <div
-        className="h-[400px] relative flex items-center justify-center"
+        className="lg:h-[400px] h-[200px] relative flex items-center justify-center"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "Cover",
@@ -23,10 +23,10 @@ export default function Login() {
           </div>
         </div>
       </div>
-      <div className="flex">
-        <div className="py-28 w-1/2 flex justify-center border-r-[1px]">
+      <div className="flex lg:flex-row flex-col">
+        <div className="lg:py-28 py-10 lg:w-1/2 flex justify-center border-r-[1px]">
           <form className="flex flex-col gap-10">
-            <h1 className="text-center text-2xl font-semibold">
+            <h1 className="text-center lg:text-2xl font-semibold">
               Login to Buyverly
             </h1>
 
@@ -36,7 +36,7 @@ export default function Login() {
               </h1>
               <input
                 type="text"
-                className="border-[1px] w-[500px] h-12 rounded-md focus:outline-none focus:ring-1 focus:ring-black hover:ring-1 hover:ring-black px-3"
+                className="border-[1px] lg:w-[500px] w-72 h-12 rounded-md focus:outline-none focus:ring-1 focus:ring-black hover:ring-1 hover:ring-black px-3"
                 required
               />
             </div>
@@ -46,7 +46,7 @@ export default function Login() {
               </h1>
               <input
                 type="text"
-                className="border-[1px] h-12 w-[500px] rounded-md focus:outline-none focus:ring-1 focus:ring-black hover:ring-1 hover:ring-black px-3"
+                className="border-[1px] h-12 lg:w-[500px] w-72 rounded-md focus:outline-none focus:ring-1 focus:ring-black hover:ring-1 hover:ring-black px-3"
                 required
               />
             </div>
@@ -55,15 +55,15 @@ export default function Login() {
               <h1>Remember me</h1>
             </div>
             <div>
-              <button className="text-xs h-12 font-bold w-[500px] text-center bg-zinc-100 py-3 rounded-md hover:bg-black hover:text-white ease-in-out duration-300">
+              <button className="text-xs h-12 font-bold lg:w-[500px] w-72 text-center bg-zinc-100 py-3 rounded-md hover:bg-black hover:text-white ease-in-out duration-300">
                 LOG IN
               </button>
             </div>
           </form>
         </div>
-        <div className="py-28 w-1/2 flex justify-center">
+        <div className="lg:py-28 py-10 lg:w-1/2 flex justify-center">
           <form className="flex flex-col gap-10">
-            <h1 className="text-center text-2xl font-semibold">
+            <h1 className="text-center lg:text-2xl font-semibold">
               Register to Buyverly
             </h1>
             <div className="flex flex-col gap-3">
@@ -72,7 +72,7 @@ export default function Login() {
               </h1>
               <input
                 type="text"
-                className="border-[1px] w-[500px] h-12 rounded-md focus:outline-none focus:ring-1 focus:ring-black hover:ring-1 hover:ring-black px-3"
+                className="border-[1px] lg:w-[500px] w-72 h-12 rounded-md focus:outline-none focus:ring-1 focus:ring-black hover:ring-1 hover:ring-black px-3"
                 required
               />
             </div>
@@ -82,7 +82,7 @@ export default function Login() {
               </h1>
               <input
                 type="text"
-                className="border-[1px] h-12 w-[500px] rounded-md focus:outline-none focus:ring-1 focus:ring-black hover:ring-1 hover:ring-black px-3"
+                className="border-[1px] h-12 lg:w-[500px] w-72 rounded-md focus:outline-none focus:ring-1 focus:ring-black hover:ring-1 hover:ring-black px-3"
                 required
               />
             </div>
@@ -92,12 +92,12 @@ export default function Login() {
               </h1>
               <input
                 type="text"
-                className="border-[1px] h-12 w-[500px] rounded-md focus:outline-none focus:ring-1 focus:ring-black hover:ring-1 hover:ring-black px-3"
+                className="border-[1px] h-12 lg:w-[500px] w-72 rounded-md focus:outline-none focus:ring-1 focus:ring-black hover:ring-1 hover:ring-black px-3"
                 required
               />
             </div>
             <div>
-              <button className="text-xs h-12 font-bold w-[500px] text-center bg-zinc-100 py-3 rounded-md hover:bg-black hover:text-white ease-in-out duration-300">
+              <button className="text-xs h-12 font-bold lg:w-[500px] w-72 text-center bg-zinc-100 py-3 rounded-md hover:bg-black hover:text-white ease-in-out duration-300">
                 REGISTER
               </button>
             </div>

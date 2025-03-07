@@ -32,16 +32,16 @@ export default function AboutSlider() {
     <div>
       <div className="text-center text-zinc-500 flex flex-col gap-4">
         <h1>Real customer experience</h1>
-        <h1 className="text-zinc-800 text-4xl font-medium">
+        <h1 className="text-zinc-800 lg:text-4xl text-2xl font-medium">
           Photos From Our Clients
         </h1>
       </div>
-      <div className="mt-14">
+      <div className="lg:mt-14 mt-4">
         <div className="grid grid-cols-2 px-6 gap-6">
           {fashion
             .slice(startIndex, startIndex + visibleItems)
             .map((item, index) => (
-              <div className="h-[500px] overflow-hidden rounded-md">
+              <div className="lg:h-[500px] overflow-hidden rounded-md">
                 <img
                   src={item.img}
                   alt="photo"

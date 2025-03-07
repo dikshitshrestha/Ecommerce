@@ -62,13 +62,10 @@ export default function Footer() {
           <div className="text-sm text-zinc-600 flex flex-col gap-1.5">
             <p>
               With seamless shopping, secure payments, and fast delivery,
-              Buyverly
+              Buyverly ensures a hassle-free experience. Buyverly is your
+              ultimate fashion destination, offering high-quality clothing for
+              every style.
             </p>
-            <p>
-              ensures a hassle-free experience. Buyverly is your ultimate
-              fashion
-            </p>
-            <p>destination, offering high-quality clothing for every style.</p>
           </div>
           <div>
             <h1 className="text-xs font-semibold text-zinc-800">
