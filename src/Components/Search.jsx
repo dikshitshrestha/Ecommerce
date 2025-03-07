@@ -5,7 +5,7 @@ export default function Search() {
   return (
     <div className="absolute z-50 w-full px-6 bg-zinc-100 py-10">
       <div className="flex items-center shadow-2xl rounded-full">
-        <div className="px-2 bg-white border-r-[1px] absolute left-6 z-50 rounded-l-full">
+        <div className="px-2 border-r-[1px] absolute left-6 z-50 rounded-l-full">
           <select
             name="category"
             id="category"
@@ -24,7 +24,7 @@ export default function Search() {
         <input
           type="text"
           placeholder="SEARCH YOUR PRODUCT"
-          className="outline-none py-4 px-32 text-[12px] w-full relative rounded-full "
+          className="outline-none py-4 lg:px-32 pl-32 pr-12 text-[12px] w-full relative rounded-full "
         />
         <button className="h-10 w-10 flex justify-center items-center bg-black rounded-full text-white text-xl absolute right-7 hover:bg-orange-600 duration-300">
           <IoSearch />
