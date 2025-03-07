@@ -21,19 +21,19 @@ export default function Kids() {
   ];
 
   return (
-    <div className="grid grid-cols-3 mt-8 gap-6 px-6">
+    <div className="grid lg:grid-cols-3 gap-6 px-6 mt-8">
       {kids.map((item, index) => (
         <div
-          className="overflow-hidden h-80 w-full rounded-md relative"
+          className="relative lg:h-80 w-full h-40 rounded-md overflow-hidden"
           key={index}
         >
           <img
             src={item.image}
             alt={item.title}
-            className="object-cover hover:scale-110 ease-in-out duration-700"
+            className="object-cover hover:scale-110 ease-out duration-700 h-full w-full"
           />
-          <div className="absolute bottom-4 left-[40%]">
-            <button className="flex items-center rounded-full bg-white text-xs font-semibold gap-1 py-3 px-8 hover:bg-black hover:text-white ease-in-out duration-500">
+          <div className="absolute bottom-2 lg:bottom-4 left-[40%]">
+            <button className="flex items-center rounded-full bg-white text-black text-xs font-semibold gap-1 lg:py-3 py-1.5 px-4 lg:px-8 hover:bg-black hover:text-white ease-in-out duration-500">
               {item.title}
               <MdArrowOutward />
             </button>

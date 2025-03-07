@@ -15,12 +15,12 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className="flex items-center py-8 px-8 gap-36">
-        <div className="flex items-center gap-2">
+      <div className="flex items-center flex-col lg:flex-row py-8 lg:px-8 gap-6 lg:gap-36 w-full">
+        <div className="flex items-center justify-center gap-2 w-full">
           <img src={logo} alt="logo" className="h-10" />
           <h1 className="text-2xl font-semibold">Buyverly</h1>
         </div>
-        <div className="flex text-xs text-zinc-600 gap-8 ml-72">
+        <div className="flex lg:text-xs justify-center text-zinc-600 gap-8 lg:ml-72">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -62,10 +62,10 @@ export default function Navbar() {
             BLOG
           </NavLink>
         </div>
-        <div className="flex items-center gap-5 ml-20">
+        <div className="flex items-center lg:gap-5 gap-2 lg:ml-20">
           <button
             onClick={() => setPopUp(popUp === "search" ? null : "search")}
-            className={`h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer ${
+            className={`lg:h-12 lg:w-12 h-8 w-8 flex items-center justify-center lg:text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer ${
               popUp === "search" ? "bg-black text-white" : ""
             }`}
           >
@@ -73,7 +73,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => setPopUp(popUp === "wishlist" ? null : "wishlist")}
-            className={`h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer ${
+            className={`lg:h-12 lg:w-12 h-8 w-8 flex items-center justify-center lg:text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer ${
               popUp === "wishlist" ? "bg-black text-white" : ""
             }`}
           >
@@ -81,7 +81,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => setPopUp(popUp === "cart" ? null : "cart")}
-            className={`h-12 w-12 flex items-center justify-center text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer ${
+            className={`lg:h-12 lg:w-12 h-8 w-8 flex items-center justify-center lg:text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer ${
               popUp === "cart" ? "bg-black text-white" : ""
             }`}
           >
@@ -97,7 +97,7 @@ export default function Navbar() {
             <NavLink to="/login">
               <div
                 onMouseEnter={() => setActiveButton(1)}
-                className={`relative z-10 text-[10px] py-3 px-6 rounded-full transition-all duration-300`}
+                className={`relative z-10 lg:text-[10px]  py-3 px-6 rounded-full transition-all duration-300`}
               >
                 LOGIN
               </div>
@@ -105,7 +105,7 @@ export default function Navbar() {
             <NavLink to="/login">
               <div
                 onMouseEnter={() => setActiveButton(2)}
-                className={`relative z-10 text-[10px] py-3 px-6 rounded-full transition-all duration-300 cursor-pointer`}
+                className={`relative z-10 lg:text-[10px] py-3 px-3 lg:px-6 rounded-full transition-all duration-300 cursor-pointer`}
               >
                 REGISTER
               </div>

@@ -53,8 +53,8 @@ export default function Footer() {
   ];
   return (
     <div>
-      <div className="flex">
-        <div className="border-[1px] py-20 px-6 flex flex-col gap-7 w-2/6">
+      <div className="flex lg:flex-row flex-col">
+        <div className="border-[1px] py-20 px-6 flex flex-col gap-7 lg:w-2/6">
           <div className="flex items-center gap-2">
             <img src={logo} alt="logo" className="h-7" />
             <h1 className="text-2xl font-bold">Buyverly</h1>
@@ -85,10 +85,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="py-20 px-20 flex gap-40 border-y-[1px] w-4/6">
+        <div className="lg:py-20 py-10 px-20 flex lg:flex-row flex-col gap-8 lg:gap-40 border-y-[1px] lg:w-4/6">
           <div>
             <h1 className="font-semibold">COMPANY INFO</h1>
-            <div className="flex flex-col text-xs text-zinc-500 gap-4 mt-6 font-medium">
+            <div className="flex flex-col text-xs text-zinc-500 lg:gap-4 gap-2 lg:mt-6 mt-2 font-medium">
               {company.map((item, index) => (
                 <a
                   href="#"
@@ -102,7 +102,7 @@ export default function Footer() {
           </div>
           <div>
             <h1 className="font-semibold">HELP & SUPPORT</h1>
-            <div className="flex flex-col text-xs text-zinc-500 gap-4 mt-6 font-medium">
+            <div className="flex flex-col text-xs text-zinc-500 lg:gap-4 gap-2 lg:mt-6 mt-2 font-medium">
               {support.map((item, index) => (
                 <a
                   href="#"
@@ -116,7 +116,7 @@ export default function Footer() {
           </div>
           <div>
             <h1 className="font-semibold">MY ACCOUNT</h1>
-            <div className="flex flex-col text-xs text-zinc-500 gap-4 mt-6 font-medium">
+            <div className="flex flex-col text-xs text-zinc-500 lg:gap-4 gap-2 lg:mt-6 mt-2 font-medium">
               {login.map((item, index) => (
                 <a
                   href="#"
@@ -130,7 +130,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="py-12 px-7 flex gap-60 items-center">
+      <div className="py-12 lg:px-7 px-4 flex lg:flex-row flex-col justify-center gap-10 lg:gap-60 items-center">
         <div className="flex flex-col gap-3 text-zinc-600">
           <h1 className="flex items-center gap-2">
             <FaLocationDot />
@@ -155,7 +155,7 @@ export default function Footer() {
               </React.Fragment>
             ))}
           </div>
-          <h1 className="text-zinc-700">
+          <h1 className="text-zinc-700 text-center mt-5">
             Copyright © 2025 DikshitShrestha. All Rights Reserved.
           </h1>
         </div>
