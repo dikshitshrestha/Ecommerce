@@ -32,7 +32,7 @@ export default function Blog() {
           </div>
         </div>
         <div className="lg:py-16 py-2 px-6">
-          <div className="flex lg:flex-row flex-col lg:h-[500px] gap-5">
+          <div className="flex md:flex-row md:justify-center flex-col lg:h-[500px] gap-5">
             <div className="overflow-hidden lg:h-full h-48 lg:w-2/3 rounded-md">
               <img
                 src={photo1}

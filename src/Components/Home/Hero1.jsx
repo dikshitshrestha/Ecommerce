@@ -5,15 +5,15 @@ import { FaArrowRight } from "react-icons/fa6";
 export default function Hero1() {
   return (
     <div className="container mx-auto">
-      <div className="lg:h-[750px] bg-zinc-200 overflow-hidden relative">
+      <div className="lg:h-[750px] md:h-[350px] bg-zinc-200 overflow-hidden relative">
         <img
           src={leather}
           alt="leather"
-          className="absolute -right-[40%] xl:-right-[5%] lg:-right-[20%]"
+          className="absolute -right-[15%] xl:-right-[5%] lg:-right-[20%]"
         />
         <div className="h-full flex flex-col justify-center lg:px-16 py-8 px-2 text-left gap-3">
-          <h1 className="lg:text-5xl font-semibold">Leather</h1>
-          <h1 className="xl:text-8xl lg:text-6xl font-bold mb-4">
+          <h1 className="lg:text-5xl md:text-4xl font-semibold">Leather</h1>
+          <h1 className="xl:text-8xl lg:text-6xl md:text-5xl font-bold mb-4">
             Jackets & Coats
           </h1>
           <div>

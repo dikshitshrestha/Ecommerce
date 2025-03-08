@@ -82,7 +82,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="lg:py-20 py-10 xl:px-20 flex lg:flex-row flex-col justify-center items-center gap-8 lg:gap-20 xl:gap-40 border-y-[1px] lg:w-4/6">
+        <div className="lg:py-20 py-10 xl:px-20 flex md:flex-row flex-col justify-center items-center gap-8 lg:gap-20 xl:gap-40 border-y-[1px] lg:w-4/6">
           <div>
             <h1 className="font-semibold">COMPANY INFO</h1>
             <div className="flex flex-col text-xs text-zinc-500 lg:gap-4 gap-2 lg:mt-6 mt-2 font-medium">

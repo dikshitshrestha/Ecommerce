@@ -38,7 +38,7 @@ export default function Hero() {
           {pages[activeIndex] === "two" && <Hero2 />}
           {pages[activeIndex] === "three" && <Hero3 />}
         </div>
-        <div className="absolute top-[75%] lg:top-[90%] left-1">
+        <div className="absolute top-[75%] md:top-[90%] lg:top-[90%] left-1">
           <button
             onClick={left}
             className={`bg-black text-white lg:py-4 py-2 lg:px-4 px-2 rounded-full ease-in-out duration-500 hover:bg-zinc-400 hover:text-black ${
@@ -48,7 +48,7 @@ export default function Hero() {
             <IoIosArrowBack />
           </button>
         </div>
-        <div className="absolute top-[75%] lg:top-[90%] right-2">
+        <div className="absolute top-[75%] md:top-[90%] lg:top-[90%] right-2">
           <button
             onClick={right}
             className={`bg-black text-white lg:py-4 py-2 lg:px-4 px-2 rounded-full ease-in-out duration-500 hover:bg-zinc-400 hover:text-black ${

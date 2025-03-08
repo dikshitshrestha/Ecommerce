@@ -53,7 +53,7 @@ export default function ShopHeader() {
 
   return (
     <div>
-      <div className="relative lg:pb-52 pb-24">
+      <div className="relative lg:pb-52 md:pb-44 pb-24">
         <div className="lg:h-[400px] h-[200px] relative">
           <img src={bg} alt="bg" className="h-full w-full object-cover" />
           <div className="text-white absolute top-[40%] flex flex-col w-full items-center">
@@ -69,7 +69,7 @@ export default function ShopHeader() {
             </h1>
           </div>
         </div>
-        <div className="w-full flex items-center justify-center lg:gap-5 gap-2 lg:px-14 absolute bottom-[15%] lg:bottom-[5%]">
+        <div className="w-full flex items-center justify-center lg:gap-5 gap-2 lg:px-14 absolute bottom-[15%] md:bottom-10 lg:bottom-[5%]">
           <button
             onClick={handleLeft}
             disabled={startIndex === 0}
@@ -85,7 +85,7 @@ export default function ShopHeader() {
                   className="xl:h-72 xl:w-72 flex flex-col justify-center items-center"
                   key={index}
                 >
-                  <div className="xl:h-3/4 h-12 w-12 lg:h-40 lg:w-40 xl:w-3/4 overflow-hidden rounded-full ">
+                  <div className="xl:h-3/4 h-12 w-12 md:h-32 md:w-32 lg:h-40 lg:w-40 xl:w-3/4 overflow-hidden rounded-full ">
                     <img
                       src={item.img}
                       alt={item.name}

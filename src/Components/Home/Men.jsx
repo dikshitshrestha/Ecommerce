@@ -21,7 +21,7 @@ export default function Men() {
   ];
 
   return (
-    <div className="grid lg:grid-cols-3 gap-6 px-6 mt-8">
+    <div className="grid md:grid-cols-3 gap-6 px-6 mt-8">
       {Men.map((item, index) => (
         <div
           key={index}

@@ -35,7 +35,7 @@ export default function HomeProducts() {
   return (
     <div className="lg:py-28 py-14 container mx-auto">
       <h1 className="text-2xl font-semibold text-center">NEW ARRIVALS</h1>
-      <div className="grid xl:grid-cols-5 lg:grid-cols-4 grid-rows-2 gap-8 px-6 lg:py-14 py-6">
+      <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-2 grid-rows-2 gap-8 px-6 lg:py-14 py-6">
         {Products.map((item, index) => (
           <div key={index}>
             <div

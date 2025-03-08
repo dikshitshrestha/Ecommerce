@@ -21,7 +21,7 @@ export default function Kids() {
   ];
 
   return (
-    <div className="grid lg:grid-cols-3 gap-6 px-6 mt-8">
+    <div className="grid md:grid-cols-3 gap-6 px-6 mt-8">
       {kids.map((item, index) => (
         <div
           className="relative lg:h-80 w-full h-40 rounded-md overflow-hidden"

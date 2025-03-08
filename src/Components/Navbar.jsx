@@ -15,12 +15,12 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className="flex items-center flex-col lg:flex-row py-8 lg:px-8 gap-6 xl:gap-36 w-full">
+      <div className="flex items-center flex-col md:flex-row py-8 lg:px-8 gap-6 xl:gap-36 w-full">
         <div className="flex items-center justify-center gap-2 w-full">
-          <img src={logo} alt="logo" className="h-10" />
-          <h1 className="text-2xl font-semibold">Buyverly</h1>
+          <img src={logo} alt="logo" className="h-10 md:h-6" />
+          <h1 className="text-2xl font-semibold md:text-xl">Buyverly</h1>
         </div>
-        <div className="flex lg:text-xs justify-center text-zinc-600 gap-8 lg:ml-36 xl:ml-72">
+        <div className="flex md:text-xs justify-center text-zinc-600 gap-8 lg:ml-36 xl:ml-72">
           <NavLink
             to="/"
             className={({ isActive }) =>
