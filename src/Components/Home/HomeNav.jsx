@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomeNav({ activeTab, setActiveTab }) {
   return (
-    <div className="mt-8 flex justify-center lg:text-sm text-xs gap-10 font-semibold text-zinc-400">
+    <div className="mt-8 flex container mx-auto justify-center lg:text-sm text-xs gap-10 font-semibold text-zinc-400">
       <button
         onClick={() => setActiveTab("men")}
         className={`hover:text-black ease-in-out duration-300 ${

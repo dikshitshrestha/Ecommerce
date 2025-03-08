@@ -15,12 +15,12 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className="flex items-center flex-col lg:flex-row py-8 lg:px-8 gap-6 lg:gap-36 w-full">
+      <div className="flex items-center flex-col lg:flex-row py-8 lg:px-8 gap-6 xl:gap-36 w-full">
         <div className="flex items-center justify-center gap-2 w-full">
           <img src={logo} alt="logo" className="h-10" />
           <h1 className="text-2xl font-semibold">Buyverly</h1>
         </div>
-        <div className="flex lg:text-xs justify-center text-zinc-600 gap-8 lg:ml-72">
+        <div className="flex lg:text-xs justify-center text-zinc-600 gap-8 lg:ml-36 xl:ml-72">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -62,7 +62,7 @@ export default function Navbar() {
             BLOG
           </NavLink>
         </div>
-        <div className="flex items-center lg:gap-5 gap-2 lg:ml-20">
+        <div className="flex items-center lg:gap-5 gap-2 lg:ml-10 xl:ml-20">
           <button
             onClick={() => setPopUp(popUp === "search" ? null : "search")}
             className={`lg:h-12 lg:w-12 h-8 w-8 flex items-center justify-center lg:text-xl rounded-full shadow-[5px_2px_15px_rgba(0,0,0,0.3)] hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer ${

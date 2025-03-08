@@ -49,7 +49,7 @@ export default function ShopProducts() {
 
   return (
     <div>
-      <div className="grid lg:grid-cols-4 gap-8 px-10 lg:py-20">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3 gap-8 px-10 lg:py-20">
         {products.map((item, index) => (
           <div
             className="relative"

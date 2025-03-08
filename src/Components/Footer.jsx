@@ -52,7 +52,7 @@ export default function Footer() {
     <FaApplePay />,
   ];
   return (
-    <div>
+    <div className="container mx-auto">
       <div className="flex lg:flex-row flex-col">
         <div className="border-[1px] py-20 px-6 flex flex-col gap-7 lg:w-2/6">
           <div className="flex items-center gap-2">
@@ -82,7 +82,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="lg:py-20 py-10 px-20 flex lg:flex-row flex-col gap-8 lg:gap-40 border-y-[1px] lg:w-4/6">
+        <div className="lg:py-20 py-10 xl:px-20 flex lg:flex-row flex-col justify-center items-center gap-8 lg:gap-20 xl:gap-40 border-y-[1px] lg:w-4/6">
           <div>
             <h1 className="font-semibold">COMPANY INFO</h1>
             <div className="flex flex-col text-xs text-zinc-500 lg:gap-4 gap-2 lg:mt-6 mt-2 font-medium">
@@ -127,8 +127,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="py-12 lg:px-7 px-4 flex lg:flex-row flex-col justify-center gap-10 lg:gap-60 items-center">
-        <div className="flex flex-col gap-3 text-zinc-600">
+      <div className="py-12 lg:px-7 px-4 flex lg:flex-row flex-col justify-center gap-10 xl:gap-60 items-center">
+        <div className="flex flex-col gap-3 lg:text-sm xl:text-[17px] text-zinc-600">
           <h1 className="flex items-center gap-2">
             <FaLocationDot />
             Lalitpur Store: Dhobighat, Lalitpur, Nepal
@@ -152,15 +152,15 @@ export default function Footer() {
               </React.Fragment>
             ))}
           </div>
-          <h1 className="text-zinc-700 text-center mt-5">
+          <h1 className="text-zinc-700 text-center xl:text-[17px] lg:text-sm mt-5">
             Copyright © 2025 DikshitShrestha. All Rights Reserved.
           </h1>
         </div>
-        <div className="flex gap-5">
+        <div className="flex xl:gap-5 gap-2">
           {payments.map((item, index) => (
             <div
               key={index}
-              className="text-4xl bg-slate-100 py-2 px-2 rounded-full hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer"
+              className="xl:text-4xl text-2xl bg-slate-100 py-2 px-2 rounded-full hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer"
             >
               {item}
             </div>

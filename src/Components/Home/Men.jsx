@@ -30,7 +30,7 @@ export default function Men() {
           <img
             src={item.image}
             alt={item.title}
-            className="object-cover hover:scale-110 w-full ease-out duration-700"
+            className="object-cover hover:scale-110 w-full h-full ease-out duration-700"
           />
           <div className="absolute bottom-2 lg:bottom-4 left-[40%]">
             <button className="flex items-center rounded-full bg-white text-black text-xs font-semibold gap-1 lg:py-3 py-1.5 px-4 lg:px-8 hover:bg-black hover:text-white ease-in-out duration-500">

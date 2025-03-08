@@ -20,7 +20,7 @@ export default function Hero() {
   }
   return (
     <div>
-      <div className="h-36 relative w-full">
+      <div className="h-36 relative w-full container mx-auto">
         <img src={bg} alt="bg" className="h-full w-full object-cover" />
         <div className="absolute lg:top-[40%] top-[50%] right-12">
           <h1 className="flex gap-1 lg:text-xl text-[10px] font-semibold text-white">

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Subscribe() {
   return (
-    <div className="bg-zinc-100">
+    <div className="bg-zinc-100 container mx-auto">
       <div className="lg:py-24 py-12 flex flex-col lg:gap-10 gap-5">
         <h1 className="lg:text-2xl text-xl font-medium text-center">
           SUBSCRIBE & GET 15% DISCOUNT

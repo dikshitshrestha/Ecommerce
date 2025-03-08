@@ -7,7 +7,7 @@ import Kid from "./Kid";
 export default function HomeShop() {
   const [activeTab, setActiveTab] = useState("men");
   return (
-    <div>
+    <div className="container mx-auto">
       <HomeNav activeTab={activeTab} setActiveTab={setActiveTab} />
       <div>
         {activeTab === "men" && <Men />}

@@ -82,10 +82,10 @@ export default function ShopHeader() {
               .slice(startIndex, startIndex + visibleIndex)
               .map((item, index) => (
                 <div
-                  className="lg:h-72 lg:w-72 flex flex-col justify-center items-center"
+                  className="xl:h-72 xl:w-72 flex flex-col justify-center items-center"
                   key={index}
                 >
-                  <div className="lg:h-3/4 h-12 w-12 lg:w-3/4 overflow-hidden rounded-full ">
+                  <div className="xl:h-3/4 h-12 w-12 lg:h-40 lg:w-40 xl:w-3/4 overflow-hidden rounded-full ">
                     <img
                       src={item.img}
                       alt={item.name}
@@ -96,7 +96,7 @@ export default function ShopHeader() {
                     <h1 className="font-semibold lg:text-xl text-xs">
                       {item.name}
                     </h1>
-                    <p className="font-light text-[10px] text-zinc-600">
+                    <p className="font-light lg:text-sm text-[10px] text-zinc-600">
                       {item.products} Products
                     </p>
                   </div>

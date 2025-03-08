@@ -22,8 +22,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="flex lg:flex-row flex-col py-8 items-center">
-        <div className="lg:py-28 px-4 lg:px-28">
+      <div className="flex xl:flex-row flex-col py-8 items-center">
+        <div className="xl:py-28 px-4 lg:px-28">
           <div className="flex flex-col gap-3 pb-8">
             <h1 className="lg:text-2xl font-semibold text-zinc-800">
               GET IN TOUCH
@@ -67,7 +67,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="lg:pr-20 flex flex-col gap-4 py-6 pl-4 lg:gap-7">
+        <div className="xl:pr-20 flex flex-col gap-4 lg:pl-0 py-6 pl-4 lg:gap-7">
           <h1 className="font-semibold">
             Address:
             <span className="text-zinc-700 font-normal ml-1">
